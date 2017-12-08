@@ -44,7 +44,7 @@
   
         var gifImg = $("<img>", {
           "class": "img img-responsive gifImg",
-          "src": response.data[i].images.downsized_still.url,
+          "src": response.data[i].images.fixed_height.url,
           "data-still": response.data[i].images.fixed_height_still.url,
           "data-animate": response.data[i].images.fixed_height.url,
           "data-state": "still"        
@@ -66,7 +66,7 @@
       // Create a button type
       var a = $("<button>");
       // Add a class of "topic"
-      a.addClass("topic btn btn-primary btn-xs");
+      a.addClass("topic btn btn-danger btn-xs");
       // Include the data-name attribute
       a.attr("data-name", topics[i]);
       // Label the button
