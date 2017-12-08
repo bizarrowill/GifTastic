@@ -10,16 +10,14 @@
 // Try using a loop that appends a button for each string in the array.
 
 
-
-  // Apple 0
-  // Banana 1
-
   // Initial array of topics
   var topics = ["Hulk Hogan" , "Macho Man" , "Ric Flair" , 
                 "Ultimate Warrior" , "Andre the Giant" , "John Cena" , 
                 "The Rock" , "Jake the Snake" , "Vince McMahon" , 
                 "Brett Hart" , "Undertaker" , "The Miz" ];
   
+
+  //                          Functions
   // Display the still images and setup the proper tags for later use
   function displayGIFs() {
   
@@ -88,7 +86,7 @@
     var state = myImg.attr("data-state");
   
     // If the image is still
-    if(state == "still") {
+    if(state === "still") {
       // Change the image to the animated GIF
       myImg.attr("src", myImg.attr("data-animate"));
       // Change the data-state to animate

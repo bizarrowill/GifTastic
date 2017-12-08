@@ -49,12 +49,6 @@
         </div>
         
     
-    
-        
-    
-        <!-- Movies will get dumped Dere -->
-        <div id="movies-view"></div>
-    
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript">
           // This function handles events where the add button is clicked
@@ -62,7 +56,7 @@
             event.preventDefault();
             // This line of code will grab the input from the textbox
             var topic = $("#topic-input").val().trim();
-            // The movie from the textbox is then added to our array
+            // The topic from the textbox is then added to our array
             topics.push(topic);
             // Calling renderButtons which handles the processing of our movie array
             renderButtons();
