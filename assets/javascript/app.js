@@ -93,8 +93,8 @@
       myImg.attr("data-state", "animate");
     }
     // If the image is animated
-    else {
-      // Change teh image to the still GIF
+    if(state === "animate") {
+      // Change the image to the still GIF
       myImg.attr("src", myImg.attr("data-still"));
       // Change the data-state to still
       myImg.attr("data-state", "still");
