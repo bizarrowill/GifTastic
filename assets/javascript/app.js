@@ -23,7 +23,7 @@
   
     var apiKey = "QP0RDd09AJuZmtlXVZRgQXxN6tdNG0ZL";
     var searchInfo = $(this).attr("data-name");
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + searchInfo + "&api_key=" + apiKey + "&limit=15";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + searchInfo + "&api_key=" + apiKey + "&limit=10";
   
     // Creates AJAX call for the specific button being clicked
     $.ajax({
